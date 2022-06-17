@@ -18,15 +18,18 @@ jpg,png画像をリサイズして余白を追加することでアスペクト�
     Python : ver3.7.7
 
 ## 必要なライブラリ
-    pillow, math, sys, pathlib
+    pillow, math, sys, pathlib, ※GUI版のみPySimpleGUI
 
 ## 使い方
 
+コマンドライン版:
 変換したい画像があるフォルダを引数で指定して実行するとファイル名の先頭にアスペクト比の値が追加された上で、同じフォルダに変換された画像が出力されます。
 
     Windowsの例 python.exe "C:/Users/YoutechA320U/jpg16_9resize.py" "C:/Users/YoutechA320U/Pictures/resize/"
 
     Debianの例　python /home/youtecha320u/png1_1resize.py /home/youtecha320u/Pictures/
+GUI版:
+exeファイルを実行し、GUIに従ってフォルダを選択します。
 
 ## 備考
 画像の拡張子がjpg,png以外だと認識しません。
