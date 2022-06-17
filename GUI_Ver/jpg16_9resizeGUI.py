@@ -5,6 +5,7 @@ import PySimpleGUI as sg
 result = sg.popup_get_folder("フォルダを選択してください")
 if result is None:
    result =""
+result=result+"/"
 exclulists,jpglists = [],[]
 exclupath = pathlib.Path(result).glob('16_9_*.jpg')
 for e in exclupath:
@@ -16,7 +17,7 @@ for je in  range(len(exclulists)):
     jpglists.remove(exclulists[je])
 
 for jr in range(len(jpglists)):
- img = Image.open(result+"/"+jpglists[jr])
+ img = Image.open(result+jpglists[jr])
  width, height = img.size
  if width/height <= 16/9:
   re_height = height/1080
@@ -44,6 +45,6 @@ for jr in range(len(jpglists)):
   back_img = Image.new('RGB',(1920,1080),color=(0,0,0))
   back_img.paste(re_img, (0, x_coordi)) 
 
- back_img.save(result+"/16_9_"+jpglists[jr], quality=95)
-if result !="":
+ back_img.save(result+"16_9_"+jpglists[jr], quality=95)
+if result !="/":
  sg.popup('変換が完了しました')
