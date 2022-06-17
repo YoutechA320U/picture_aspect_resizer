@@ -5,6 +5,7 @@ import PySimpleGUI as sg
 result = sg.popup_get_folder("フォルダを選択してください")
 if result is None:
    result =""
+result=result+"/"
 exclulists,pnglists = [],[]
 exclupath = pathlib.Path(result).glob('1_1_*.png')
 for e in exclupath:
@@ -54,5 +55,5 @@ for pr in range(len(pnglists)):
   back_img.paste(re_img, (0, x_coordi))   
 
  back_img.save(result+"1_1_"+pnglists[pr], quality=95)
-if result !="":
+if result !="/":
  sg.popup('変換が完了しました')
