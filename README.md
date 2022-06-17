@@ -8,8 +8,8 @@ jpg,png画像をリサイズして余白を追加することでアスペクト�
 ## 概要
 jpg,png画像をリサイズして余白を追加することでアスペクト比と大きさを揃えるPythonスクリプトです。
 
-![SS](https://github.com/YoutechA320U/picture_aspect_resizer/blob/master/42425276.png "変換前") 
-![SS](https://github.com/YoutechA320U/picture_aspect_resizer/blob/master/16_9_42425276.png "変換後") 
+![SS](https://raw.githubusercontent.com/YoutechA320U/picture_aspect_resizer/main/42425276.png?raw=true "変換前") 
+![SS](https://raw.githubusercontent.com/YoutechA320U/picture_aspect_resizer/main/16_9_42425276.png?raw=true "変換後") 
 
 アスペクト比と解像度はそれぞれ1:1(1080x1080),4:3(1440x1080),16:9(1920x1080)です。
 
