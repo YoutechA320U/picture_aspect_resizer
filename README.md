@@ -41,6 +41,7 @@ exeファイルを実行し、GUIに従ってフォルダを選択します。
  * <https://coffee-blue-mountain.com/python-get-filename-0809/>  
  * <https://note.nkmk.me/python-pillow-add-margin-expand-canvas/>  
  * <https://note.nkmk.me/python-pillow-paste/>
+ * <https://qiita.com/takanorimutoh/items/53bf44d6d5b37190e7d1/>
 
 
 ## 履歴
